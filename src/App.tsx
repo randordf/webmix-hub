@@ -1,5 +1,6 @@
+
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 // Páginas Administrativas
 import AdminLayout from "./components/admin/AdminLayout";
@@ -15,10 +16,27 @@ import { Button } from "@/components/ui/button";
 // Outros componentes existentes da aplicação
 function HomePage() {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <p>Welcome to the home page!</p>
-      <Button>Click me</Button>
+    <div className="max-w-4xl mx-auto px-4 py-8">
+      <h1 className="text-3xl font-bold mb-4">Home Page</h1>
+      <p className="text-gray-700 mb-6">Bem-vindo ao WebMix Hub!</p>
+      
+      <div className="space-y-4">
+        <div className="p-6 border rounded-md bg-white shadow-sm">
+          <h2 className="text-xl font-semibold mb-3">Área Administrativa</h2>
+          <p className="text-gray-600 mb-4">Acesse o painel administrativo para gerenciar projetos, clientes e mais.</p>
+          <Link to="/admin">
+            <Button>Acessar Área Admin</Button>
+          </Link>
+        </div>
+        
+        <div className="p-6 border rounded-md bg-white shadow-sm">
+          <h2 className="text-xl font-semibold mb-3">Sobre Nós</h2>
+          <p className="text-gray-600 mb-4">Conheça mais sobre nossa plataforma.</p>
+          <Link to="/about">
+            <Button variant="outline">Saiba Mais</Button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
