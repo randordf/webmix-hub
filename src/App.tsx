@@ -1,4 +1,3 @@
-
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -57,11 +56,17 @@ export default function App() {
         {/* Páginas Administrativas com layout comum */}
         <Route path="/admin" element={<AdminLayout />}>
           <Route index element={<AdminDashboard />} />
+          <Route path="projects" element={<ProjetosPage />} />
+          <Route path="clients" element={<ClientesPage />} />
+          <Route path="templates" element={<TemplatesPage />} />
+          <Route path="team" element={<EquipePage />} />
+          <Route path="analytics" element={<AnalyticsPage />} />
+          <Route path="settings" element={<ConfiguracoesPage />} />
+          
+          {/* Keep the original Portuguese routes as alternatives */}
           <Route path="projetos" element={<ProjetosPage />} />
           <Route path="clientes" element={<ClientesPage />} />
-          <Route path="templates" element={<TemplatesPage />} />
           <Route path="equipe" element={<EquipePage />} />
-          <Route path="analytics" element={<AnalyticsPage />} />
           <Route path="configuracoes" element={<ConfiguracoesPage />} />
         </Route>
         

@@ -79,15 +79,15 @@ export function AdminSidebar() {
           <SidebarItem 
             icon={FileText} 
             title="Projetos" 
-            href="/admin/projetos"
-            isActive={currentPath.includes("/admin/projetos")}
+            href="/admin/projects"
+            isActive={currentPath.includes("/admin/projects")}
             badge={3}
           />
           <SidebarItem 
             icon={Users} 
             title="Clientes" 
-            href="/admin/clientes"
-            isActive={currentPath.includes("/admin/clientes")} 
+            href="/admin/clients"
+            isActive={currentPath.includes("/admin/clients")} 
           />
         </SidebarSection>
         <SidebarSection title="Conteúdo">
@@ -102,8 +102,8 @@ export function AdminSidebar() {
           <SidebarItem 
             icon={Users} 
             title="Equipe" 
-            href="/admin/equipe"
-            isActive={currentPath.includes("/admin/equipe")} 
+            href="/admin/team"
+            isActive={currentPath.includes("/admin/team")} 
           />
           <SidebarItem 
             icon={BarChart3} 
@@ -114,8 +114,8 @@ export function AdminSidebar() {
           <SidebarItem 
             icon={Settings} 
             title="Configurações" 
-            href="/admin/configuracoes"
-            isActive={currentPath.includes("/admin/configuracoes")} 
+            href="/admin/settings"
+            isActive={currentPath.includes("/admin/settings")} 
           />
         </SidebarSection>
       </div>
