@@ -52,14 +52,15 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // WebMix custom colors
         webmix: {
-          200: "#E0F2FE",
-          500: "#0EA5E9",
-          600: "#0284C7",
-          800: "#075985",
-          900: "#0C4A6E",
+          200: "#e2e8f0",
+          500: "#3b82f6",
+          600: "#2563eb",
+          800: "#1e40af",
+          900: "#1e3a8a",
         },
-        sidebar: "#0F172A",
+        sidebar: "#f8fafc",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -68,12 +69,12 @@ module.exports = {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: 0 },
+          from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
+          to: { height: "0" },
         },
       },
       animation: {
