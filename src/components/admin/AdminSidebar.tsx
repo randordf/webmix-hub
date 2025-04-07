@@ -63,9 +63,12 @@ export function AdminSidebar() {
   return (
     <div className="flex h-screen w-64 flex-col border-r bg-sidebar">
       <div className="flex h-14 items-center border-b px-4">
-        <Link to="/admin" className="flex items-center gap-2 font-semibold">
-          <Package className="h-6 w-6 text-webmix-500" />
-          <span className="text-lg font-semibold">WebMix Admin</span>
+        <Link to="/admin" className="flex items-center gap-2">
+          <img 
+            src="/lovable-uploads/ee7e21ee-4232-4ad4-9db3-e61211740d07.png" 
+            alt="WebMix Logo" 
+            className="h-10"
+          />
         </Link>
       </div>
       <div className="flex-1 overflow-auto py-2">
