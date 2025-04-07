@@ -69,6 +69,7 @@ export function AdminSidebar() {
             alt="WebMix Logo" 
             className="h-10"
           />
+          <span className="text-lg font-semibold">WebMix</span>
         </Link>
       </div>
       <div className="flex-1 overflow-auto py-2">

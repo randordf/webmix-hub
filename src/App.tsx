@@ -17,7 +17,7 @@ import { Button } from "@/components/ui/button";
 function HomePage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-4">Home Page</h1>
+      <h1 className="text-3xl font-bold mb-4">WebMix Hub</h1>
       <p className="text-gray-700 mb-6">Bem-vindo ao WebMix Hub!</p>
       
       <div className="space-y-4">
@@ -43,9 +43,12 @@ function HomePage() {
 
 function AboutPage() {
   return (
-    <div>
-      <h1>About Page</h1>
-      <p>Learn more about us.</p>
+    <div className="max-w-4xl mx-auto px-4 py-8">
+      <h1 className="text-3xl font-bold mb-4">Sobre Nós</h1>
+      <p className="text-gray-700 mb-6">Conheça mais sobre nossa plataforma de gerenciamento de projetos web.</p>
+      <Link to="/">
+        <Button variant="outline">Voltar para Home</Button>
+      </Link>
     </div>
   );
 }
