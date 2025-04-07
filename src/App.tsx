@@ -1,4 +1,3 @@
-
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -63,8 +62,6 @@ export default function App() {
           <Route path="equipe" element={<EquipePage />} />
           <Route path="analytics" element={<AnalyticsPage />} />
           <Route path="configuracoes" element={<ConfiguracoesPage />} />
-          
-          {/* English route alternatives removed since we're standardizing on Portuguese */}
         </Route>
         
         {/* Outras rotas existentes */}
